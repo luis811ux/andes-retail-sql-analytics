@@ -1,0 +1,9 @@
+fecha_venta;ciudad;tienda;vendedor;cliente;producto;categoria;cantidad;precio_unitario;costo_unitario
+2025-01-03;BOGOTA ;Tienda Centro;Juan Perez ;cliente_001;Laptop Pro 15; tecnologia;14;$3.500.000;1800000
+2025-01-05;BOGOTA ;Tienda Centro;Ana gomez ;cliente_003;Monitor 27 pulgadas; tecnologia ;15;$1.200.000;600000
+2025-01-03;Medellin;Tienda Sur;Maria Lopez ;cliente_006;Mouse Inalambrico;TECNOLOGIA;32;$120.000;60000
+2025-01-05;Medellin;Tienda Sur;Carlos Suarez;cliente_008;Monitor 27 pulgadas;TECNOLOGIA;15;$1.180.000;600000
+2025-01-03;CALI ;Tienda Norte;Karen diaz;cliente_011;Monitor 27 pulgadas; TECNOLOGIA;17;$1.210.000;605000
+2025-01-05;Cali ;Tienda Norte;Luis Ramirez;cliente_013;Laptop Pro 15;TECNOLOGIA;18;$3.510.000;1810000
+2025-01-03;BARRANQUILLA ;Tienda Este;Diego rios ;cliente_016;Laptop Pro 15; tecnologia;19;$3.520.000;1820000
+2025-01-05;Barranquilla ;Tienda este;Carla Paez;cliente_018;Monitor 27 pulgadas; tecnologia ;19;$1.200.000;600000

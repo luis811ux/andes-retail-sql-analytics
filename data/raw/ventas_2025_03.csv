@@ -1,0 +1,9 @@
+fecha_venta;ciudad;tienda;vendedor;cliente;producto;categoria;cantidad;precio_unitario;costo_unitario
+2025-03-01;BOGOTA ;Tienda Centro;Juan Perez ;cliente_046;Laptop Pro 15; tecnologia;12;$3.520.000;1850000
+2025-03-02;BOGOTA ;Tienda Centro;Ana gomez ;cliente_047;Mouse Inalambrico;tecnologia;31;$82.000;40000
+2025-03-03;Medellin;Tienda Sur;Maria Lopez ;cliente_048;Teclado Mecánico; TECNOLOGIA;22;$215000;105000
+2025-03-04;Medellin;Tienda Sur;Carlos Suarez;cliente_049;Auriculares Bluetooth;tecnologia;24;$175.000;78000
+2025-03-05;CALI ;Tienda Norte;Karen diaz;cliente_050;Tablet 10;tecnologia;15;$1.080.000;710000
+2025-03-06;Cali ;Tienda Norte;Luis Ramirez;cliente_051;Monitor 27;Tecnologia;16;$1.230.000;690000
+2025-03-07;BARRANQUILLA ;Tienda Este;Diego rios ;cliente_052;Webcam HD;tecnologia;18;$205.000;125000
+2025-03-08;Barranquilla ;Tienda este;Carla Paez;cliente_053;Cargador USB-C; tecnologia;45;$62000;34000
