@@ -42,27 +42,32 @@ El proyecto implementa una arquitectura de datos en capas diseñada para separar
 ### Schemas Implementados:
 
 ```
-📦 andes_retail_db
+data/
 │
-├── 📂 raw/              → Datos crudos sin procesar
-│   ├── ventas_2025_01_raw
-│   ├── ventas_2025_02_raw
-│   └── ventas_2025_03_raw
+├── 📂 raw/                          🧾 Original CSV files (no transformations)
+│   ├── ventas_2025_01_enero.csv     📄 January 2025 sales
+│   ├── ventas_2025_02_febrero.csv   📄 February 2025 sales
+│   └── ventas_2025_03_marzo.csv     📄 March 2025 sales
 │
-├── 📂 stg/              → Staging (datos normalizados)
-│   └── ventas_2025
+├── 📂 sql/                          🧠 SQL transformation layers
+│   ├── 01_create_schemas.sql        🏗️  Database schemas creation
+│   │
+│   ├── 02_raw_load.sql              📥 Raw data loading documentation
+│   │
+│   ├── 03_dim_productos.sql         🧩 Product dimension
+│   ├── 03_dim_vendedores.sql        🧩 Salesperson dimension
+│   ├── 03_dim_clientes.sql          🧩 Customer dimension
+│   ├── 03_dim_costos_fijos.sql      🧩 Fixed costs dimension
+│   │
+│   ├── 04_stg_ventas_2025.sql       🔄 Staging layer (clean & standardized data)
+│   │
+│   ├── 05_fact_ventas_2025.sql      📊 Fact table with financial metrics
+│   ├── 06_fact_finanzas_tienda_mes.sql 📈 Monthly store financials
+│   └── 07_fact_kpis.sql             🎯 Executive KPIs views
 │
-├── 📂 dim/              → Dimensiones y catálogos
-│   ├── dim_tiendas
-│   ├── dim_productos
-│   ├── dim_clientes
-│   ├── dim_vendedores
-│   └── costos_fijos_2025
-│
-└── 📂 fact/             → Tablas de hechos y KPIs
-    ├── ventas_2025
-    ├── finanzas_tienda_mes
-    └── 8 vistas de KPIs
+└── README.md                        📝 Project documentation
+
+
 ```
 
 ### Esquemas, tablas y vistas:
