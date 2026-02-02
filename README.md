@@ -42,31 +42,25 @@ El proyecto implementa una arquitectura de datos en capas diseñada para separar
 ### Schemas Implementados:
 
 ```
-data/
+andes-retail-sql-analytics/
 │
-├── 📂 raw/                          🧾 Original CSV files (no transformations)
-│   ├── ventas_2025_01_enero.csv     📄 January 2025 sales
-│   ├── ventas_2025_02_febrero.csv   📄 February 2025 sales
-│   └── ventas_2025_03_marzo.csv     📄 March 2025 sales
+├── 📂 data/                         📦 Project datasets & SQL logic
+│   │
+│   ├── 📂 raw/                      🧾 Original CSV files (no transformations)
+│   │   ├── ventas_2025_01_enero.csv
+│   │   ├── ventas_2025_02_febrero.csv
+│   │   └── ventas_2025_03_marzo.csv
+│   │
+│   └── 📂 sql/                      🧠 SQL transformation layers
+│       ├── 01_create_schemas.sql
+│       ├── 02_raw_load.sql
+│       ├── 03_dim_*.sql
+│       ├── 04_stg_ventas_2025.sql
+│       ├── 05_fact_ventas_2025.sql
+│       ├── 06_fact_finanzas_tienda_mes.sql
+│       └── 07_fact_kpis.sql
 │
-├── 📂 sql/                          🧠 SQL transformation layers
-│   ├── 01_create_schemas.sql        🏗️  Database schemas creation
-│   │
-│   ├── 02_raw_load.sql              📥 Raw data loading documentation
-│   │
-│   ├── 03_dim_productos.sql         🧩 Product dimension
-│   ├── 03_dim_vendedores.sql        🧩 Salesperson dimension
-│   ├── 03_dim_clientes.sql          🧩 Customer dimension
-│   ├── 03_dim_costos_fijos.sql      🧩 Fixed costs dimension
-│   │
-│   ├── 04_stg_ventas_2025.sql       🔄 Staging layer (clean & standardized data)
-│   │
-│   ├── 05_fact_ventas_2025.sql      📊 Fact table with financial metrics
-│   ├── 06_fact_finanzas_tienda_mes.sql 📈 Monthly store financials
-│   └── 07_fact_kpis.sql             🎯 Executive KPIs views
-│
-└── README.md                        📝 Project documentation
-
+└── README.md                        📝 Main project documentation
 
 ```
 
